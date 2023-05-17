@@ -1,0 +1,107 @@
+const time = ()=>{
+    let d = new Date();
+    let h = d.getHours();
+    let m = d.getMinutes();
+    let s = d.getSeconds();
+    document.body.children[2].children[0].children[0].innerHTML = h;
+
+    document.body.children[2].children[1].children[0].innerHTML = m;
+
+    document.body.children[2].children[2].children[0].innerHTML = s;
+}
+
+setInterval(time,1000);
+
+/*
+    <!DOCTYPE html> 
+<html> 
+  <head>
+    <title>BATMAN</title>
+  </head>
+  <style>
+    *{
+      margin : 0;
+      padding : 0;
+    }
+
+    body{
+      display : flex;
+      align-items : center;
+      justify-content : center;
+      background-color : black;
+    }
+    video{
+            position : absolute;
+            top : 0;
+            left : 0;
+            height : 100%;
+            z-index : -1;
+            width : 1910px;
+
+        }
+        @media(min-aspect-ratio : 16/9){
+            .back-video{
+                width : 100%;
+                height : auto;
+            }
+        }
+        @media(max-aspect-ratio : 16/9){
+            .back-video{
+                width : auto;
+                height : 100%;
+            }
+        }
+    .container{
+      width : 1000px;
+      height : 350px;
+      display : flex;
+      flex-direction : row;
+      justify-content : space-around;
+      align-items : center;
+      position : relative;
+      top : 330px;
+    }
+    .box1{
+      width : 300px;
+      height : 300px;
+      box-sizing : border-box;
+      padding : 0 20px;
+      color : white;
+      font-size : 10em;
+      display : flex;
+      align-items : center;
+      justify-content : center;
+    }
+    .box2{
+      width : 300px;
+      height : 300px;
+      color : white;
+      font-size : 10em;
+      display : flex;
+      align-items : center;
+      justify-content : center;
+    }
+    .box3{
+      width : 300px;
+      height : 300px;
+      color : white;
+      font-size : 10em;
+      display : flex;
+      align-items : center;
+      justify-content : center;
+    }
+
+  </style>
+<body>
+  <script src = "49_clock.js"></script>
+  <video autoplay loop muted plays-inline >
+    <source src = "Grass flower with wind and sunset background.mp4" type = "video/mp4">
+</video>
+  <div class="container">
+    <div class="box1"><p>12</p></div>
+    <div class="box2"><p>10</p></div>
+    <div class="box3"><p>19</p></div>
+  </div>
+</body> 
+</html>
+*/
